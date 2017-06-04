@@ -102,10 +102,13 @@ public class Servlet extends HttpServlet {
 				request.setAttribute("administrators", admins);
 				this.setResponseController("listAdministrators").forward(request, response);
 			}
+			else if(action.equals("registerQuestion")){
+				this.setResponseController(action).forward(request, response);
+			}
 			
 		}
 		else{
-			this.setResponseController("index").forward(request, response);
+			this.setResponseController("login").forward(request, response);
 		}
 		
 	}
@@ -153,8 +156,7 @@ public class Servlet extends HttpServlet {
 					this.setResponseController("login").forward(request, response);
 				}
 				
-			}
-			
+			}			
 			
 		}
 		else {

@@ -17,6 +17,9 @@
 		<tr>
 			<td><a href="?action=listAdministrators">List administrators</a></td>
 		</tr>
+		<tr>
+			<td><a href="?action=registerQuestion">Register question</a></td>
+		</tr>
 	</table>
 
 	<p>
